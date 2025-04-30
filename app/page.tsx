@@ -3,11 +3,15 @@ import { Button } from "@/components/ui/button"
 import { ChevronRight, Truck, Wallet, Calculator, Leaf, ArrowRight, Users, Shield, BarChart3 } from "lucide-react"
 import FeatureCard from "@/components/feature-card"
 import { ModuleCard } from "@/components/module-card"
+import Header from "@/components/header"
+
 import LaptopDisplay from "@/components/laptop-display"
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
+      <Header />
+
       {/* Hero Section with Laptop Display */}
       <section className="relative overflow-hidden py-20 md:py-28">
         <div className="absolute inset-0 z-0 opacity-10">
@@ -131,7 +135,7 @@ export default function Home() {
               icon={<Wallet className="w-12 h-12" />}
               title="Max Controle"
               description="Modulo para consultas rápidas e intuitiva de saldos e movimentações. Praticidade e controle em um só lugar."
-              link="#"
+              link="/max-controle"
             />
           </div>
         </div>
