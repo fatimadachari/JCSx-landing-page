@@ -409,7 +409,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white mb-1">Endereço</h3>
-                    <p className="text-gray-400">Gen. Flores da Cunha, 61 - Centro, Ijuí - RS, 98700-000</p>
+                    <p className="text-gray-400"><a href="https://maps.app.goo.gl/3mtZKiTRYsyfN4Xv8" target="blank">Gen. Flores da Cunha, 61 - Centro, Ijuí - RS, 98700-000</a></p>
                   </div>
                 </div>
 
@@ -432,8 +432,8 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white mb-1">Telefones</h3>
-                    <p className="text-gray-400">(55) 3332-8388</p>
-                    <p className="text-gray-400">(55) 99139-0767</p>
+                    <p className="text-gray-400"><a href="tel:+55553332-8388">(55) 3332-8388</a></p>
+                    <p className="text-gray-400"><a href="tel:+555599139-0767">(55) 99139-0767</a></p>
                   </div>
                 </div>
 
@@ -456,8 +456,8 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white mb-1">Email</h3>
-                    <p className="text-gray-400">atendimento@prodan.com.br</p>
-                    <p className="text-gray-400">financeiro@prodan.com.br</p>
+                    <p className="text-gray-400"><a href="mailto:atendimento@prodan.com.br" target="blank">atendimento@prodan.com.br</a></p>
+                    <p className="text-gray-400"><a href="mailto:financeiro@prodan.com.br" target="blank">financeiro@prodan.com.br</a></p>
                   </div>
                 </div>
               </div>
