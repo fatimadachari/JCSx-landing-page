@@ -22,7 +22,7 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-green-500 rounded-full blur-[150px] opacity-15"></div>
         <div className="absolute -bottom-80 -left-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-20"></div>
 
-        <div className="container relative z-10 mx-auto px-20">
+        <div className="container relative z-10 mx-auto px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Text content - 5 columns */}
             <div className="lg:col-span-5">
@@ -59,7 +59,7 @@ export default function Home() {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-20 relative overflow-hidden">
+      <section className="py-20 relative overflow-hidden px-10">
         <div className="absolute -top-40 -left-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10"></div>
 
         <div className="container mx-auto px-4">
@@ -100,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* Modules Section */}
-      <section className="py-20 bg-gray-900 relative overflow-hidden">
+      <section className="py-20 bg-gray-900 relative overflow-hidden px-10">
         <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10"></div>
 
         <div className="container mx-auto px-4">
@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* Company Section */}
-      <section className="py-20 bg-gray-900 relative overflow-hidden">
+      <section className="py-20 bg-gray-900 relative overflow-hidden px-10">
         <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10"></div>
 
         <div className="container mx-auto px-4">
@@ -201,7 +201,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 relative overflow-hidden">
+      <section className="py-20 relative overflow-hidden px-10">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10"></div>
 
         <div className="container mx-auto px-4">
@@ -314,7 +314,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-black to-gray-900 relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-black to-gray-900 relative overflow-hidden px-10">
         <div className="absolute inset-0 bg-grid-white/[0.02]" />
         <div className="absolute -top-40 -left-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-20"></div>
         <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-20"></div>
@@ -339,7 +339,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-gray-800 py-12">
+      <footer className="bg-black border-t border-gray-800 py-12 px-10">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
