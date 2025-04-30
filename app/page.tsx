@@ -1,13 +1,115 @@
+"use client"
+
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ChevronRight, Truck, Wallet, Calculator, Leaf, ArrowRight, Users, Shield, BarChart3 } from "lucide-react"
+import {
+  ChevronRight,
+  Truck,
+  Wallet,
+  Calculator,
+  ArrowRight,
+  BarChart3,
+  Database,
+  FileCheck,
+  Receipt,
+  ClipboardCheck,
+  Scale,
+  FileText,
+  ShoppingCart,
+  Sprout,
+  PieChart,
+  CreditCard,
+  Boxes,
+  ChevronDown,
+  ChevronUp,
+} from "lucide-react"
+import { useState } from "react"
 import FeatureCard from "@/components/feature-card"
 import { ModuleCard } from "@/components/module-card"
 import Header from "@/components/header"
 
-import LaptopDisplay from "@/components/laptop-display"
-
 export default function Home() {
+  const [showAllFeatures, setShowAllFeatures] = useState(false)
+
+  // Array de recursos do Max Agrícola
+  const maxAgricolaFeatures = [
+    {
+      icon: <Scale className="text-green-500 w-6 h-6" />,
+      title: "Integração com Balança Rodoviária",
+      description:
+        "Integração completa com balanças rodoviárias para pesagem automática de veículos e cargas, eliminando erros manuais e aumentando a produtividade.",
+    },
+    {
+      icon: <PieChart className="text-green-500 w-6 h-6" />,
+      title: "Tabela de Descontos",
+      description:
+        "Configuração flexível de tabelas de descontos físicos e financeiros, permitindo ajustes automáticos baseados em critérios personalizáveis.",
+    },
+    {
+      icon: <Receipt className="text-green-500 w-6 h-6" />,
+      title: "Emissão de Contra Nota de Depósito",
+      description:
+        "Emissão simplificada de contra notas de depósito, garantindo o controle eficiente do fluxo de documentos e facilitando processos de armazenagem.",
+    },
+    {
+      icon: <FileText className="text-green-500 w-6 h-6" />,
+      title: "Contrato de Compra e Venda",
+      description:
+        "Criação, gestão e acompanhamento de contratos de compra e venda, com alertas de vencimento e relatórios de cumprimento.",
+    },
+    {
+      icon: <BarChart3 className="text-green-500 w-6 h-6" />,
+      title: "Relatórios Gerenciais e Estatísticos",
+      description:
+        "Dashboards e relatórios detalhados para tomada de decisões, com dados em tempo real sobre operações, vendas, estoque e financeiro.",
+    },
+    {
+      icon: <Sprout className="text-green-500 w-6 h-6" />,
+      title: "Controle de Grãos por Lavoura",
+      description:
+        "Rastreabilidade completa dos grãos por lavoura e talião, permitindo acompanhamento detalhado da produção e qualidade do produto.",
+    },
+    {
+      icon: <ShoppingCart className="text-green-500 w-6 h-6" />,
+      title: "Controle de Pedidos",
+      description:
+        "Gerenciamento eficiente de pedidos de compra e venda, com acompanhamento de status, histórico e integração com estoque e financeiro.",
+    },
+    {
+      icon: <ClipboardCheck className="text-green-500 w-6 h-6" />,
+      title: "Emissão de Receituário Agronômico",
+      description:
+        "Emissão e controle de receituários agronômicos, atendendo às exigências legais e facilitando o trabalho dos profissionais técnicos.",
+    },
+    {
+      icon: <Database className="text-green-500 w-6 h-6" />,
+      title: "Compra e Venda de Sementes",
+      description:
+        "Gestão completa de compra e venda de sementes por lote e pilha, garantindo rastreabilidade e controle de qualidade.",
+    },
+    {
+      icon: <FileCheck className="text-green-500 w-6 h-6" />,
+      title: "Emissão de NF-e",
+      description:
+        "Emissão integrada de Notas Fiscais Eletrônicas (NF-e), com validação automática, armazenamento e gestão de documentos fiscais.",
+    },
+    {
+      icon: <CreditCard className="text-green-500 w-6 h-6" />,
+      title: "Emissão de Boletos e Duplicatas",
+      description:
+        "Sistema completo para emissão e controle de boletos bancários e duplicatas, com integração bancária e acompanhamento de pagamentos.",
+    },
+    {
+      icon: <Boxes className="text-green-500 w-6 h-6" />,
+      title: "Controle de Inventário",
+      description:
+        "Gestão eficiente de inventário com controle em tempo real, alertas de estoque mínimo e máximo, e histórico de movimentações.",
+    },
+  ]
+
+  // Determinar quais recursos mostrar
+  const visibleFeatures = showAllFeatures ? maxAgricolaFeatures : maxAgricolaFeatures.slice(0, 4)
+
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
       <Header />
@@ -47,13 +149,10 @@ export default function Home() {
                   Saiba mais <ChevronRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
-
-
             </div>
 
             {/* Laptop display - 7 columns */}
-            <div className="lg:col-span-7">
-            </div>
+            <div className="lg:col-span-7"></div>
           </div>
         </div>
       </section>
@@ -79,7 +178,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard
               number="01"
-              title="Serviço para Qualquer Nível de Expertise"
+              title="Serviço para Qualquer N��vel de Expertise"
               description="Soluções adaptadas para empresas de todos os tamanhos e níveis de conhecimento técnico."
               variant="dark"
             />
@@ -99,6 +198,68 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Max Agricola Detailed Features Section - NEW SECTION */}
+      <section className="py-20 relative overflow-hidden px-10 bg-gradient-to-b from-black to-gray-900">
+        <div className="absolute inset-0 bg-grid-white/[0.02] pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-15 pointer-events-none"></div>
+        <div className="absolute top-40 right-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10 pointer-events-none"></div>
+
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="inline-block px-4 py-1 bg-green-500/10 rounded-full mb-4">
+              <p className="text-green-500 font-medium text-sm">DETALHES DO SISTEMA</p>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="text-white">Recursos</span> <span className="text-green-500">Max Agrícola</span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              O Max Agrícola é a solução completa para empresas do ramo agrícola que necessitam eficiência e agilidade.
+              Conheça os principais recursos que vão transformar a gestão do seu negócio:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Recursos visíveis */}
+            {visibleFeatures.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-gray-900/50 border border-gray-800 rounded-xl p-6 hover:border-green-500/50 transition-all hover:shadow-lg hover:shadow-green-500/5 group"
+              >
+                <div className="w-12 h-12 bg-green-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-500/20 transition-all">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
+                <p className="text-gray-400">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Botão Ver Mais / Ver Menos */}
+          <div className="mt-10 text-center">
+            <Button
+              onClick={() => {
+                console.log("Toggle botão clicado!")
+                setShowAllFeatures(!showAllFeatures)
+              }
+
+              }
+              variant="outline"
+              className="z-50 border-gray-700 text-white hover:bg-gray-800 px-6 py-4 rounded-xl group"
+            >
+              {showAllFeatures ? (
+                <>
+                  Ver menos <ChevronUp className="ml-2 h-4 w-4 group-hover:translate-y-[-2px] transition-transform" />
+                </>
+              ) : (
+                <>
+                  Ver mais <ChevronDown className="ml-2 h-4 w-4 group-hover:translate-y-[2px] transition-transform" />
+                </>
+              )}
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Modules Section */}
       <section className="py-20 bg-gray-900 relative overflow-hidden px-10">
         <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10"></div>
@@ -106,13 +267,12 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-1 bg-green-500/10 rounded-full mb-4">
-              <p className="text-green-500 font-medium text-sm">SISTEMA COMPLETO</p>
+              <p className="text-green-500 font-medium text-sm">MÓDULOS ESPECIALIZADOS</p>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-white">Max</span> <span className="text-green-500">Agrícola</span>
+              <span className="text-white">Plataforma</span> <span className="text-green-500">completa</span>
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              O Sistema foi desenvolvido para empresas do ramo agrícola que necessitam eficiência e agilidade.
               O ERP Max Agrícola é essencial para a produtividade de sua empresa, composto por módulos que podem ser adquiridos separadamente:
             </p>
           </div>
@@ -122,13 +282,13 @@ export default function Home() {
               icon={<Calculator className="w-12 h-12" />}
               title="Max Contábil"
               description="Integração contábil completa para empresas organizadas que não necessitam lançar os registros novamente."
-              link="#"
+              link="/max-contabil"
             />
             <ModuleCard
               icon={<Truck className="w-12 h-12" />}
               title="Conhecimento de Frete"
               description="O módulo de frete foi desenvolvido para empresas que precisam de controle na emissão e organização dos CTes e MDFes."
-              link="#"
+              link="/conhecimento-de-frete"
             />
 
             <ModuleCard
@@ -155,14 +315,14 @@ export default function Home() {
                 <span className="text-white">Conheça a</span> <span className="text-green-500">JCSx Sistemas</span>
               </h2>
               <p className="text-gray-400 mb-6">
-                A JCSx Sistemas foi fundada em 02 Janeiro de 2013, focada no ramo agrícola,
-                com o objetivo de trazer novos conceitos de administração empresarial,
-                buscando novas ferramentas de desenvolvimento de sistemas para atender melhor os nossos clientes.
+                A JCSx Sistemas foi fundada em 02 Janeiro de 2013, focada no ramo agrícola, com o objetivo de trazer
+                novos conceitos de administração empresarial, buscando novas ferramentas de desenvolvimento de sistemas
+                para atender melhor os nossos clientes.
               </p>
               <p className="text-gray-400 mb-8">
-                Com a nossa constante busca de aprimoramento de nosso produto principal,
-                novos módulos vem sendo incluídos no sistema, atendendo as exigências legais e de mercado,
-                nunca esquecendo as necessidades do cliente.
+                Com a nossa constante busca de aprimoramento de nosso produto principal, novos módulos vem sendo
+                incluídos no sistema, atendendo as exigências legais e de mercado, nunca esquecendo as necessidades do
+                cliente.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -305,8 +465,8 @@ export default function Home() {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.82903153936!2d-53.91802169999999!3d-28.394231399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fc2d675ceacf39%3A0x8581b7bc790a2c07!2sProdan%20Software%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1746035145780!5m2!1spt-BR!2sbr"
                   width="600"
                   height="450"
-                  loading="lazy">
-                </iframe>
+                  loading="lazy"
+                ></iframe>
               </div>
             </div>
           </div>
