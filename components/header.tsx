@@ -27,20 +27,20 @@ export default function Header() {
             <Link href="/" className="text-white hover:text-green-500 transition-colors font-medium">
               Home
             </Link>
-            <Link href="/solucoes" className="text-gray-400 hover:text-green-500 transition-colors font-medium">
+            <Link href="#solucoes" className="text-gray-400 hover:text-green-500 transition-colors font-medium">
               Soluções
             </Link>
-            <Link href="/empresa" className="text-gray-400 hover:text-green-500 transition-colors font-medium">
+            <Link href="#empresa" className="text-gray-400 hover:text-green-500 transition-colors font-medium">
               Empresa
             </Link>
-            <Link href="/contato" className="text-gray-400 hover:text-green-500 transition-colors font-medium">
+            <Link href="#contato" className="text-gray-400 hover:text-green-500 transition-colors font-medium">
               Contato
             </Link>
             <Button
               variant="outline"
               className="border-green-500 text-green-500 hover:bg-green-500 hover:text-black transition-all"
             >
-              Ajuda
+              WhatsApp
             </Button>
           </nav>
 
