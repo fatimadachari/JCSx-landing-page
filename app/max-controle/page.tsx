@@ -94,9 +94,6 @@ export default function MaxControlePage() {
                                 <div className="mb-6 text-green-500">{feature.icon}</div>
                                 <h3 className="text-xl font-bold mb-3 text-white">{feature.title}</h3>
                                 <p className="text-gray-400 mb-6 flex-grow">{feature.description}</p>
-                                <Button variant="link" className="text-green-500 hover:text-green-400 p-0 flex items-center">
-                                    Saiba mais <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
                             </div>
                         ))}
                     </div>
@@ -135,12 +132,6 @@ export default function MaxControlePage() {
                                         <p className="text-gray-300">{benefit}</p>
                                     </div>
                                 ))}
-                            </div>
-
-                            <div className="mt-8">
-                                <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl">
-                                    Solicitar demonstração
-                                </Button>
                             </div>
                         </div>
 

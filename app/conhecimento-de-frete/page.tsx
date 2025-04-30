@@ -11,7 +11,7 @@ export default function ConhecimentoFretePage() {
             <Header />
 
             {/* Hero Section */}
-            <section className="relative overflow-hidden py-20 md:py-28">
+            <section className="relative overflow-hidden py-20 md:py-28 px-10">
                 <div className="absolute inset-0 z-0 opacity-10">
                     <div className="absolute inset-0 bg-grid-white/[0.05]" />
                 </div>
@@ -50,7 +50,7 @@ export default function ConhecimentoFretePage() {
             </section>
 
             {/* Features Section */}
-            <section className="py-20 bg-gray-900 relative overflow-hidden">
+            <section className="py-20 bg-gray-900 relative overflow-hidden px-10">
                 <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10"></div>
 
                 <div className="container mx-auto px-4">
@@ -95,9 +95,6 @@ export default function ConhecimentoFretePage() {
                                 <div className="mb-6 text-green-500">{feature.icon}</div>
                                 <h3 className="text-xl font-bold mb-3 text-white">{feature.title}</h3>
                                 <p className="text-gray-400 mb-6 flex-grow">{feature.description}</p>
-                                <Button variant="link" className="text-green-500 hover:text-green-400 p-0 flex items-center">
-                                    Saiba mais <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
                             </div>
                         ))}
                     </div>
@@ -105,7 +102,7 @@ export default function ConhecimentoFretePage() {
             </section>
 
             {/* Resources List Section */}
-            <section className="py-20 relative overflow-hidden">
+            <section className="py-20 relative overflow-hidden px-10">
                 <div className="absolute -top-40 -left-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10"></div>
 
                 <div className="container mx-auto px-4">
@@ -163,11 +160,7 @@ export default function ConhecimentoFretePage() {
                                         <p className="text-gray-300">Emissão de CTe globalizado</p>
                                     </div>
                                 </div>
-                            </div>
-
-                            <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl">
-                                Solicitar demonstração
-                            </Button>
+                            </div>                          
                         </div>
 
                         <div className="lg:col-span-7 relative">
@@ -190,7 +183,7 @@ export default function ConhecimentoFretePage() {
             </section>
 
             {/* Benefits Section */}
-            <section className="py-20 bg-gray-900 relative overflow-hidden">
+            <section className="py-20 bg-gray-900 relative overflow-hidden px-10">
                 <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10"></div>
 
                 <div className="container mx-auto px-4">
@@ -284,92 +277,8 @@ export default function ConhecimentoFretePage() {
                 </div>
             </section>
 
-            {/* Features Highlight Section */}
-            <section className="py-20 relative overflow-hidden">
-                <div className="absolute -top-40 -left-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10"></div>
-
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div className="order-2 lg:order-1">
-                            <div className="inline-block px-4 py-1 bg-green-500/10 rounded-full mb-4">
-                                <p className="text-green-500 font-medium text-sm">DESTAQUES</p>
-                            </div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                                <span className="text-white">Interface</span> <span className="text-green-500">intuitiva</span>{" "}
-                                <span className="text-white">e produtiva</span>
-                            </h2>
-                            <p className="text-gray-400 mb-8">
-                                Trabalhe com uma interface amigável que simplifica a emissão de documentos de transporte, permitindo a
-                                digitação em uma única tela e o uso de modelos pré-configurados.
-                            </p>
-
-                            <div className="space-y-6 mb-8">
-                                <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                                        <FileText className="w-6 h-6 text-green-500" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold mb-2 text-white">Digitação Simplificada</h3>
-                                        <p className="text-gray-400">
-                                            Preencha todos os dados necessários em uma única tela, sem precisar navegar entre diferentes
-                                            módulos ou janelas.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                                        <FileCheck className="w-6 h-6 text-green-500" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold mb-2 text-white">Pré-cadastro de Tributação</h3>
-                                        <p className="text-gray-400">
-                                            Configure previamente a tributação com base na origem e destino, agilizando a emissão de
-                                            documentos e reduzindo erros.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="flex items-start space-x-4">
-                                    <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                                        <Mail className="w-6 h-6 text-green-500" />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-xl font-bold mb-2 text-white">Comunicação Automática</h3>
-                                        <p className="text-gray-400">
-                                            Envie automaticamente o XML e PDF dos documentos por email para os destinatários, melhorando a
-                                            comunicação com clientes e parceiros.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl">
-                                Solicitar demonstração
-                            </Button>
-                        </div>
-
-                        <div className="order-1 lg:order-2 relative">
-                            <div className="relative z-10 rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
-                                <Image
-                                    src="/placeholder.svg?height=600&width=600"
-                                    alt="Conhecimento de Frete Interface"
-                                    width={600}
-                                    height={600}
-                                    className="w-full h-auto"
-                                />
-                            </div>
-
-                            {/* Decorative elements */}
-                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] border border-green-500/20 rounded-full"></div>
-                            <div className="absolute -bottom-10 -right-10 w-20 h-20 bg-green-500 rounded-full blur-[50px]"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             {/* FAQ Section */}
-            <section className="py-20 bg-gray-900 relative overflow-hidden">
+            <section className="py-20 bg-gray-900 relative overflow-hidden px-10">
                 <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10"></div>
 
                 <div className="container mx-auto px-4">
@@ -448,7 +357,7 @@ export default function ConhecimentoFretePage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-gradient-to-r from-black to-gray-900 relative overflow-hidden">
+            <section className="py-20 bg-gradient-to-r from-black to-gray-900 relative overflow-hidden px-10">
                 <div className="absolute inset-0 bg-grid-white/[0.02]" />
                 <div className="absolute -top-40 -left-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-20"></div>
                 <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-20"></div>
@@ -467,12 +376,6 @@ export default function ConhecimentoFretePage() {
                         <div className="flex flex-wrap justify-center gap-4">
                             <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-8 py-6 rounded-xl text-lg">
                                 Solicitar demonstração
-                            </Button>
-                            <Button
-                                variant="outline"
-                                className="border-gray-700 text-white hover:bg-gray-800 px-8 py-6 rounded-xl text-lg"
-                            >
-                                Fale com um consultor
                             </Button>
                         </div>
                     </div>
