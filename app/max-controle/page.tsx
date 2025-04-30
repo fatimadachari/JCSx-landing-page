@@ -36,12 +36,11 @@ export default function MaxControlePage() {
                                 lugar.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl">
-                                    Solicitar demonstração
-                                </Button>
-                                <Button variant="outline" className="border-gray-700 text-white hover:bg-gray-800 px-6 py-6 rounded-xl">
-                                    Saiba mais <ChevronRight className="ml-2 h-4 w-4" />
-                                </Button>
+                                <a href="https://w.app/vijdfn" target="blank">
+                                    <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl">
+                                        Converse conosco
+                                    </Button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -268,9 +267,11 @@ export default function MaxControlePage() {
                                     </p>
                                 </div>
                             </div>
-                            <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl whitespace-nowrap">
-                                Fale conosco
-                            </Button>
+                            <a href="https://w.app/5hajzr" target="blank">
+                                <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl whitespace-nowrap">
+                                    Fale conosco
+                                </Button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -293,9 +294,11 @@ export default function MaxControlePage() {
                             com mais eficiência e precisão.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-8 py-6 rounded-xl text-lg">
-                                Solicitar demonstração
-                            </Button>
+                            <a href="https://w.app/vijdfn" target="blank">
+                                <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-8 py-6 rounded-xl text-lg">
+                                    Converse conosco
+                                </Button>
+                            </a>
                         </div>
                     </div>
                 </div>

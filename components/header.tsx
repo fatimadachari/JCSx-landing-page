@@ -36,12 +36,15 @@ export default function Header() {
             <Link href="#contato" className="text-gray-400 hover:text-green-500 transition-colors font-medium">
               Contato
             </Link>
-            <Button
-              variant="outline"
-              className="border-green-500 text-green-500 hover:bg-green-500 hover:text-black transition-all"
-            >
-              WhatsApp
-            </Button>
+            <a href="https://w.app/5hajzr" target="blank">
+              <Button
+                variant="outline"
+                className="bg-transparent border-green-500 text-green-500 hover:bg-green-500 hover:text-black transition-all"
+              >
+                WhatsApp
+              </Button>
+            </a>
+
           </nav>
 
           {/* Mobile Menu Button */}

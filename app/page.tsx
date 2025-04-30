@@ -148,9 +148,11 @@ export default function Home() {
                     Explorar agora
                   </Button>
                 </a>
-                <Button variant="outline" className="border-gray-700 text-white hover:bg-gray-800 px-6 py-6 rounded-xl">
-                  Saiba mais <ChevronRight className="ml-2 h-4 w-4" />
-                </Button>
+                <a href="https://w.app/5hajzr" target="blank">
+                  <Button variant="outline" className="bg-transparent border-gray-700 text-white hover:bg-gray-800 hover:text-white px-6 py-6 rounded-xl">
+                    Saiba mais <ChevronRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
               </div>
             </div>
 
@@ -247,7 +249,7 @@ export default function Home() {
 
               }
               variant="outline"
-              className="z-50 border-gray-700 text-white hover:bg-gray-800 px-6 py-4 rounded-xl group"
+              className="bg-transparent z-50 border-gray-700 text-white hover:bg-gray-800 hover:text-white px-6 py-4 rounded-xl group"
             >
               {showAllFeatures ? (
                 <>
@@ -493,9 +495,11 @@ export default function Home() {
               negócio.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-8 py-6 rounded-xl text-lg">
-                Converse conosco
-              </Button>
+              <a href="https://w.app/5hajzr" target="blank">
+                <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-8 py-6 rounded-xl text-lg">
+                  Converse conosco
+                </Button>
+              </a>
             </div>
           </div>
         </div>

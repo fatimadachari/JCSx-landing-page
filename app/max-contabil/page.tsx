@@ -35,12 +35,11 @@ export default function MaxContabilPage() {
                                 Integração contábil completa para empresas organizadas que não necessitam lançar os registros novamente.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl">
-                                    Solicitar demonstração
-                                </Button>
-                                <Button variant="outline" className="border-gray-700 text-white hover:bg-gray-800 px-6 py-6 rounded-xl">
-                                    Saiba mais <ChevronRight className="ml-2 h-4 w-4" />
-                                </Button>
+                                <a href="https://w.app/pfjjds" target="blank">
+                                    <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl">
+                                        Converse conosco
+                                    </Button>
+                                </a>
                             </div>
                         </div>
 
@@ -301,9 +300,11 @@ export default function MaxContabilPage() {
                             contábil da sua empresa.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-8 py-6 rounded-xl text-lg">
-                                Solicitar demonstração
-                            </Button>
+                            <a href="https://w.app/pfjjds" target="blank">
+                                <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-8 py-6 rounded-xl text-lg">
+                                    Converse conosco
+                                </Button>
+                            </a>
                         </div>
                     </div>
                 </div>
