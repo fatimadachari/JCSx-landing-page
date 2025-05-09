@@ -148,7 +148,7 @@ export default function Home() {
                     Explorar agora
                   </Button>
                 </a>
-                <a href="https://w.app/5hajzr" target="blank">
+                <a href="https://wa.me/555591489625" target="blank">
                   <Button variant="outline" className="bg-transparent border-gray-700 text-white hover:bg-gray-800 hover:text-white px-6 py-6 rounded-xl">
                     Saiba mais <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -495,7 +495,7 @@ export default function Home() {
               negócio.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="https://w.app/5hajzr" target="blank">
+              <a href="https://wa.me/555591489625" target="blank">
                 <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-8 py-6 rounded-xl text-lg">
                   Converse conosco
                 </Button>
@@ -505,7 +505,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <Footer />
     </div>
   )

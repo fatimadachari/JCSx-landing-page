@@ -36,7 +36,7 @@ export default function MaxControlePage() {
                                 lugar.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <a href="https://w.app/vijdfn" target="blank">
+                                <a href="https://wa.me/555591489625" target="blank">
                                     <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl">
                                         Converse conosco
                                     </Button>
@@ -196,86 +196,6 @@ export default function MaxControlePage() {
                 </div>
             </section>
 
-            {/* FAQ Section */}
-            <section className="py-20 relative overflow-hidden px-10">
-                <div className="absolute -top-40 -left-40 w-80 h-80 bg-green-500 rounded-full blur-[100px] opacity-10"></div>
-
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <div className="inline-block px-4 py-1 bg-green-500/10 rounded-full mb-4">
-                            <p className="text-green-500 font-medium text-sm">DÚVIDAS</p>
-                        </div>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                            <span className="text-white">Perguntas</span> <span className="text-green-500">frequentes</span>
-                        </h2>
-                        <p className="text-gray-400 max-w-2xl mx-auto">
-                            Tire suas dúvidas sobre o Max Controle e descubra como ele pode ajudar sua empresa.
-                        </p>
-                    </div>
-
-                    <div className="max-w-3xl mx-auto">
-                        <Accordion type="single" collapsible className="space-y-4">
-                            {[
-                                {
-                                    question: "O Max Controle pode ser integrado com outros sistemas?",
-                                    answer:
-                                        "Sim, o Max Controle foi desenvolvido para se integrar perfeitamente com outros módulos do sistema JCSx, como o Max Agrícola e o Max Contábil. Além disso, oferecemos APIs para integração com sistemas de terceiros.",
-                                },
-                                {
-                                    question: "Quais relatórios estão disponíveis no Max Controle?",
-                                    answer:
-                                        "O Max Controle oferece uma ampla variedade de relatórios, incluindo fluxo de caixa, movimentações financeiras, análise de receitas e despesas, projeções financeiras, entre outros. Todos os relatórios são personalizáveis e podem ser exportados em diversos formatos.",
-                                },
-                                {
-                                    question: "É possível acessar o Max Controle de dispositivos móveis?",
-                                    answer:
-                                        "Sim, o Max Controle possui uma interface responsiva que se adapta a diferentes tamanhos de tela, permitindo o acesso via smartphones e tablets. Além disso, estamos desenvolvendo aplicativos nativos para iOS e Android para uma experiência ainda melhor.",
-                                },
-                                {
-                                    question: "Como funciona o suporte técnico para o Max Controle?",
-                                    answer:
-                                        "Oferecemos suporte técnico especializado por telefone, e-mail e chat, com atendimento em horário comercial. Nossos clientes com planos premium têm acesso a suporte 24/7 e atendimento prioritário.",
-                                },
-                                {
-                                    question: "O Max Controle é adequado para pequenas empresas?",
-                                    answer:
-                                        "Absolutamente! O Max Controle foi projetado para atender empresas de todos os tamanhos. Para pequenas empresas, oferecemos planos com preços acessíveis e funcionalidades essenciais para o controle financeiro eficiente.",
-                                },
-                            ].map((faq, index) => (
-                                <AccordionItem
-                                    key={index}
-                                    value={`item-${index}`}
-                                    className="border border-gray-800 rounded-xl overflow-hidden"
-                                >
-                                    <AccordionTrigger className="px-6 py-4 hover:bg-gray-900/50 text-white font-medium text-left">
-                                        {faq.question}
-                                    </AccordionTrigger>
-                                    <AccordionContent className="px-6 py-4 text-gray-400">{faq.answer}</AccordionContent>
-                                </AccordionItem>
-                            ))}
-                        </Accordion>
-
-                        <div className="mt-12 bg-gray-900 border border-gray-800 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-                            <div className="flex items-start space-x-4">
-                                <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                                    <HelpCircle className="w-6 h-6 text-green-500" />
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-bold mb-2 text-white">Ainda tem dúvidas?</h3>
-                                    <p className="text-gray-400">
-                                        Nossa equipe está pronta para ajudar você a encontrar a melhor solução para sua empresa.
-                                    </p>
-                                </div>
-                            </div>
-                            <a href="https://w.app/5hajzr" target="blank">
-                                <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl whitespace-nowrap">
-                                    Fale conosco
-                                </Button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-r from-black to-gray-900 relative overflow-hidden px-10">
@@ -294,7 +214,7 @@ export default function MaxControlePage() {
                             com mais eficiência e precisão.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <a href="https://w.app/vijdfn" target="blank">
+                            <a href="https://wa.me/555591489625" target="blank">
                                 <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-8 py-6 rounded-xl text-lg">
                                     Converse conosco
                                 </Button>

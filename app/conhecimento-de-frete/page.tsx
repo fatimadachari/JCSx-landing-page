@@ -35,7 +35,7 @@ export default function ConhecimentoFretePage() {
                                 Soluções completas para agilizar o processo de emissão e organização dos CTes e MDFes de sua empresa.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <a href="https://w.app/fyxdez" target="blank">
+                                <a href="https://wa.me/555591489625" target="blank">
                                     <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl">
                                         Converse conosco
                                     </Button>
@@ -347,7 +347,7 @@ export default function ConhecimentoFretePage() {
                                     </p>
                                 </div>
                             </div>
-                            <a href="https://w.app/5hajzr" target="blank">
+                            <a href="https://wa.me/555591489625" target="blank">
                                 <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-6 py-6 rounded-xl whitespace-nowrap">
                                     Fale conosco
                                 </Button>
@@ -375,7 +375,7 @@ export default function ConhecimentoFretePage() {
                             transformar a gestão de transportes da sua empresa.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <a href="https://w.app/fyxdez" target="blank">
+                            <a href="https://wa.me/555591489625" target="blank">
                                 <Button className="bg-green-500 hover:bg-green-600 text-black font-medium px-8 py-6 rounded-xl text-lg">
                                     Converse conosco
                                 </Button>
