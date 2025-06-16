@@ -330,31 +330,25 @@ export default function Home() {
                 cliente.
               </p>
 
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="bg-black/50 border border-gray-800 rounded-xl p-4">
-                  <h3 className="font-semibold text-green-500 mb-2">Missão</h3>
-                  <p className="text-gray-400 text-sm">
-                    Fornecer soluções tecnológicas que impulsionem o crescimento dos nossos clientes.
-                  </p>
-                </div>
-                <div className="bg-black/50 border border-gray-800 rounded-xl p-4">
-                  <h3 className="font-semibold text-green-500 mb-2">Visão</h3>
-                  <p className="text-gray-400 text-sm">
-                    Ser referência em sistemas de automação comercial para o setor agrícola.
-                  </p>
-                </div>
-              </div>
+
             </div>
 
             <div className="relative">
-              <div className="relative z-10 rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
-                <Image
-                  src="/placeholder.svg?height=600&width=600"
-                  alt="JCSx Equipe"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto"
-                />
+              <div className="relative z-10 rounded-2xl overflow-hidden">
+                <div className="grid grid-cols-2 gap-4 mb-8 mt-8">
+                  <div className="bg-black/50 border border-gray-800 rounded-xl p-4">
+                    <h3 className="font-semibold text-green-500 mb-2">Missão</h3>
+                    <p className="text-gray-400 text-sm">
+                      Fornecer soluções tecnológicas que impulsionem o crescimento dos nossos clientes.
+                    </p>
+                  </div>
+                  <div className="bg-black/50 border border-gray-800 rounded-xl p-4">
+                    <h3 className="font-semibold text-green-500 mb-2">Visão</h3>
+                    <p className="text-gray-400 text-sm">
+                      Ser referência em sistemas de automação comercial para o setor agrícola.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Decorative elements */}
