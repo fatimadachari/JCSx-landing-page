@@ -329,13 +329,11 @@ export default function Home() {
                 incluídos no sistema, atendendo as exigências legais e de mercado, nunca esquecendo as necessidades do
                 cliente.
               </p>
-
-
             </div>
 
             <div className="relative">
               <div className="relative z-10 rounded-2xl overflow-hidden">
-                <div className="grid grid-cols-2 gap-4 mb-8 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 mt-8">
                   <div className="bg-black/50 border border-gray-800 rounded-xl p-4">
                     <h3 className="font-semibold text-green-500 mb-2">Missão</h3>
                     <p className="text-gray-400 text-sm">
@@ -346,6 +344,18 @@ export default function Home() {
                     <h3 className="font-semibold text-green-500 mb-2">Visão</h3>
                     <p className="text-gray-400 text-sm">
                       Ser referência em sistemas de automação comercial para o setor agrícola.
+                    </p>
+                  </div>
+                  <div className="bg-black/50 border border-gray-800 rounded-xl p-4">
+                    <h3 className="font-semibold text-green-500 mb-2">Valores</h3>
+                    <p className="text-gray-400 text-sm">
+                      Prezamos pela ética, qualidade, valorização de pessoas e soluções com excelência e praticidade.
+                    </p>
+                  </div>
+                  <div className="bg-black/50 border border-gray-800 rounded-xl p-4">
+                    <h3 className="font-semibold text-green-500 mb-2">Compromisso</h3>
+                    <p className="text-gray-400 text-sm">
+                      Desenvolvemos sistemas ágeis e modernos que acompanham as necessidades do agronegócio.
                     </p>
                   </div>
                 </div>
