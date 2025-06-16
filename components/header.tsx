@@ -24,7 +24,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-white hover:text-green-500 transition-colors font-medium">
+            {/*<Link href="/" className="text-white hover:text-green-500 transition-colors font-medium">
               Home
             </Link>
             <Link href="#solucoes" className="text-gray-400 hover:text-green-500 transition-colors font-medium">
@@ -35,7 +35,7 @@ export default function Header() {
             </Link>
             <Link href="#contato" className="text-gray-400 hover:text-green-500 transition-colors font-medium">
               Contato
-            </Link>
+            </Link>*/}
             <a href="https://wa.me/555591489625" target="blank">
               <Button
                 variant="outline"
@@ -58,7 +58,7 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden bg-black/90 backdrop-blur-md border-b border-gray-800">
           <div className="container mx-auto px-4 py-4 space-y-3">
-            <Link
+            {/*<Link
               href="/"
               className="block text-white hover:text-green-500 transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
@@ -85,7 +85,7 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Contato
-            </Link>
+            </Link>*/}
             <Button
               variant="outline"
               className="w-full border-green-500 text-green-500 hover:bg-green-500 hover:text-black transition-all"

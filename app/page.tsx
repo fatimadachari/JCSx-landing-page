@@ -299,8 +299,8 @@ export default function Home() {
             <ModuleCard
               icon={<Wallet className="w-12 h-12" />}
               title="Max Controle"
-              description="Modulo para consultas rápidas e intuitiva de saldos e movimentações. Praticidade e controle em um só lugar."
-              link="/max-controle"
+              description="Modulo para consultas rápidas e intuitiva de saldos, movimentações e emissão de nota. Pode ser adquirido como sistema individual."
+              link="/#"
             />
           </div>
         </div>

@@ -15,9 +15,9 @@ export function ModuleCard({ icon, title, description, link }: ModuleCardProps) 
       <div className="mb-6 text-green-500">{icon}</div>
       <h3 className="text-xl font-bold mb-3 text-white">{title}</h3>
       <p className="text-gray-400 mb-6 flex-grow">{description}</p>
-      <Link href={link} className="inline-flex items-center text-green-500 font-medium hover:text-green-400">
+      {/*<Link href={link} className="inline-flex items-center text-green-500 font-medium hover:text-green-400">
         Saiba mais <ArrowRight className="ml-2 h-4 w-4" />
-      </Link>
+      </Link>*/}
     </div>
   )
 }

@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <Head>
-        <link rel="icon" href="/favicon.webp" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
